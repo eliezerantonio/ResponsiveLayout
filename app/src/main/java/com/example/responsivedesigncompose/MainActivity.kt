@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
             val windowsSizeClass = calculateWindowSizeClass(this)
             ResponsiveDesignComposeTheme {
 
-                    HomeSizeClass(windowsSizeClass)
+                   HomeConstraintLayout()
 
             }
         }
