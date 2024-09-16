@@ -23,26 +23,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             val windowsSizeClass = calculateWindowSizeClass(this)
             ResponsiveDesignComposeTheme {
-
-                   HomeConstraintLayout()
-
+                   HomeConstraintLayout(windowsSizeClass)
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ResponsiveDesignComposeTheme {
-        Greeting("Android")
-    }
-}
